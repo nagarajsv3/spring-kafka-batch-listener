@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: testgroup
+
+kafka:
+  #//Uncomment to use embedded kafka broker
+  #bootstrap-servers: ${spring.embedded.kafka.brokers}
+  bootstrap-servers: localhost:9092
+  topic:
+    c3topic: c3testtopic
+    batchtopic: batchtesttopic
